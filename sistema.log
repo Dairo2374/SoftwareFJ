@@ -1,2 +1,5 @@
 2026-11-06 23:11:49 - [ERROR] - Fallo en validación: El documento del cliente no puede estar vacío.
 2026-11-06 23:11:49 - [INFO] - Bloque de prueba de cliente finalizado.
+2026-11-06 23:33:04 - [INFO] - Cliente creado exitosamente: f6bba635
+2026-11-06 23:33:04 - [ERROR] - Operación 2 denegada - Validación de Cliente: El documento debe contener únicamente números.
+2026-11-06 23:33:04 - [ERROR] - Operación 3 denegada - Validación de Cliente: El correo electrónico no tiene un formato válido.
