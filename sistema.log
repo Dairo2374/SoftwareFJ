@@ -3,3 +3,24 @@
 2026-11-06 23:33:04 - [INFO] - Cliente creado exitosamente: f6bba635
 2026-11-06 23:33:04 - [ERROR] - Operación 2 denegada - Validación de Cliente: El documento debe contener únicamente números.
 2026-11-06 23:33:04 - [ERROR] - Operación 3 denegada - Validación de Cliente: El correo electrónico no tiene un formato válido.
+2026-11-11 21:03:02 - [INFO] - Cliente creado exitosamente: 8b3b52be
+2026-11-11 21:03:02 - [ERROR] - Operación 2 denegada - Validación de Cliente: El documento debe contener únicamente números.
+2026-11-11 21:03:02 - [ERROR] - Operación 3 denegada - Validación de Cliente: El correo electrónico no tiene un formato válido.
+2026-11-11 21:10:46 - [INFO] - Servicio creado: Sala Ada Lovelace
+2026-11-11 21:10:46 - [INFO] - Servicio creado: Servidor Dell PowerEdge
+2026-11-11 21:10:46 - [INFO] - Servicio creado: Arquitectura en Python
+2026-11-11 21:10:46 - [ERROR] - Operación 5 denegada - Parámetro de servicio inválido: El nombre del servicio es obligatorio y el precio no puede ser negativo.
+2026-11-11 21:13:27 - [INFO] - Cliente creado exitosamente: 5a957a78
+2026-11-11 21:13:27 - [ERROR] - Operación 2 denegada - Validación de Cliente: El documento debe contener únicamente números.
+2026-11-11 21:13:27 - [ERROR] - Operación 3 denegada - Validación de Cliente: El correo electrónico no tiene un formato válido.
+2026-11-11 21:13:27 - [INFO] - Servicio creado: Sala Ada Lovelace
+2026-11-11 21:13:27 - [INFO] - Servicio creado: Servidor Dell PowerEdge
+2026-11-11 21:13:27 - [INFO] - Servicio creado: Arquitectura en Python
+2026-11-11 21:13:27 - [ERROR] - Operación 5 denegada - Parámetro de servicio inválido: El nombre del servicio es obligatorio y el precio no puede ser negativo.
+2026-11-11 21:14:01 - [INFO] - Cliente creado exitosamente: de2a72dc
+2026-11-11 21:14:01 - [ERROR] - Operación 2 denegada - Validación de Cliente: El documento debe contener únicamente números.
+2026-11-11 21:14:01 - [ERROR] - Operación 3 denegada - Validación de Cliente: El correo electrónico no tiene un formato válido.
+2026-11-11 21:14:01 - [INFO] - Servicio creado: Sala Ada Lovelace
+2026-11-11 21:14:01 - [INFO] - Servicio creado: Servidor Dell PowerEdge
+2026-11-11 21:14:01 - [INFO] - Servicio creado: Arquitectura en Python
+2026-11-11 21:14:01 - [ERROR] - Operación 5 denegada - Parámetro de servicio inválido: El nombre del servicio es obligatorio y el precio no puede ser negativo.
