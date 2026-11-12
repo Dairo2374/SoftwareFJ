@@ -2,10 +2,14 @@
 # Archivo principal para la ejecución del programa
 
 from logger import log
-from excepciones import ClienteInvalidoError, ParametroFaltanteError
+from excepciones import (
+    ClienteInvalidoError,
+    ParametroFaltanteError,
+    ReservaInvalidaError,
+)
 from entidades import Cliente
-
 from servicios import ReservaSala, AlquilerEquipo, AsesoriaEspecializada
+from reservas import Reserva
 
 
 def simular_operaciones():
@@ -92,7 +96,59 @@ def simular_operaciones():
     except Exception as e:
         log.error(f"Error al calcular costos de asesoría: {e}")
 
-    print("\n-------------------------------------\n")
+    # Asegurémonos de tener los objetos instanciados para las reservas (los sacamos de las pruebas anteriores)
+    cliente_valido = Cliente("Dairo", "1020304050", "dairo@unad.edu.co")
+    sala = ReservaSala("Sala Ada Lovelace", 50000, 10)
+    equipo = AlquilerEquipo("Servidor Dell", 150000, "Cómputo")
+    lista_reservas = []
+
+    print("\n>> Operación 8: Procesamiento de una reserva EXITOSA (try/else/finally).")
+    try:
+        # Reservamos la sala por 3 horas con 5% de descuento
+        reserva_1 = Reserva(cliente_valido, sala, 3, descuento=0.05)
+        reserva_1.procesar_reserva()
+        lista_reservas.append(reserva_1)
+        print(reserva_1.mostrar_detalles())
+    except ReservaInvalidaError as e:
+        log.error(f"Error procesando reserva 1: {e}")
+
+    print(
+        "\n>> Operación 9: Reserva FALLIDA por servicio no disponible (Encadenamiento de excepciones)."
+    )
+    try:
+        # Desactivamos el servicio intencionalmente
+        equipo.disponible = False
+        reserva_2 = Reserva(cliente_valido, equipo, 2)
+        reserva_2.procesar_reserva()
+    except ReservaInvalidaError as e:
+        # Aquí verás cómo se captura la excepción encadenada
+        print(f"Error capturado correctamente: {e}")
+        # e.__cause__ contiene el ServicioNoDisponibleError original
+        log.error(f"Fallo reserva 2: {e} | Causa original: {e.__cause__}")
+        lista_reservas.append(reserva_2)
+
+    print(
+        "\n>> Operación 10: Reserva FALLIDA por valores inválidos (try/except/finally)."
+    )
+    try:
+        # Volvemos a activar el equipo, pero pasamos una cantidad negativa de días
+        equipo.disponible = True
+        reserva_3 = Reserva(cliente_valido, equipo, -5)  # -5 días es inválido
+        reserva_3.procesar_reserva()
+    except ReservaInvalidaError as e:
+        print(f"Error capturado correctamente: {e}")
+        log.error(f"Fallo reserva 3: {e} | Causa original: {e.__cause__}")
+        lista_reservas.append(reserva_3)
+
+    print("\n--- RESUMEN FINAL ---")
+    print(f"Total Clientes procesados: 1 (válido) + varios fallidos")
+    print(f"Total Reservas creadas: {len(lista_reservas)}")
+    for r in lista_reservas:
+        print(f" - {r.mostrar_detalles()}")
+
+    print("\nEl programa finalizó sus 10 operaciones de manera ESTABLE.")
+    print("Revisa el archivo 'sistema.log' para ver la trazabilidad completa.")
+    print("-------------------------------------\n")
 
 
 # Punto de entrada del programa

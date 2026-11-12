@@ -24,3 +24,44 @@
 2026-11-11 21:14:01 - [INFO] - Servicio creado: Servidor Dell PowerEdge
 2026-11-11 21:14:01 - [INFO] - Servicio creado: Arquitectura en Python
 2026-11-11 21:14:01 - [ERROR] - Operación 5 denegada - Parámetro de servicio inválido: El nombre del servicio es obligatorio y el precio no puede ser negativo.
+2026-11-11 21:36:56 - [INFO] - Cliente creado exitosamente: 4ecd511c
+2026-11-11 21:36:56 - [ERROR] - Operación 2 denegada - Validación de Cliente: El documento debe contener únicamente números.
+2026-11-11 21:36:56 - [ERROR] - Operación 3 denegada - Validación de Cliente: El correo electrónico no tiene un formato válido.
+2026-11-11 21:36:56 - [INFO] - Servicio creado: Sala Ada Lovelace
+2026-11-11 21:36:56 - [INFO] - Servicio creado: Servidor Dell PowerEdge
+2026-11-11 21:36:56 - [INFO] - Servicio creado: Arquitectura en Python
+2026-11-11 21:36:56 - [ERROR] - Operación 5 denegada - Parámetro de servicio inválido: El nombre del servicio es obligatorio y el precio no puede ser negativo.
+2026-11-11 21:36:56 - [INFO] - Iniciando procesamiento de reserva 01e8ff47 para Dairo
+2026-11-11 21:36:56 - [INFO] - Proceso de reserva 01e8ff47 concluido. Estado final: Confirmada
+2026-11-11 21:36:56 - [INFO] - Iniciando procesamiento de reserva c1b19879 para Dairo
+2026-11-11 21:36:56 - [INFO] - Proceso de reserva c1b19879 concluido. Estado final: Cancelada (Servicio no disponible)
+2026-11-11 21:48:09 - [INFO] - Cliente creado exitosamente: 44aea003
+2026-11-11 21:48:09 - [ERROR] - Operación 2 denegada - Validación de Cliente: El documento debe contener únicamente números.
+2026-11-11 21:48:09 - [ERROR] - Operación 3 denegada - Validación de Cliente: El correo electrónico no tiene un formato válido.
+2026-11-11 21:48:09 - [INFO] - Servicio creado: Sala Ada Lovelace
+2026-11-11 21:48:09 - [INFO] - Servicio creado: Servidor Dell PowerEdge
+2026-11-11 21:48:09 - [INFO] - Servicio creado: Arquitectura en Python
+2026-11-11 21:48:09 - [ERROR] - Operación 5 denegada - Parámetro de servicio inválido: El nombre del servicio es obligatorio y el precio no puede ser negativo.
+2026-11-11 21:48:09 - [INFO] - Iniciando procesamiento de reserva 07553cd8 para Dairo
+2026-11-11 21:48:09 - [INFO] - Proceso de reserva 07553cd8 concluido. Estado final: Confirmada
+2026-11-11 21:48:09 - [INFO] - Iniciando procesamiento de reserva d348d394 para Dairo
+2026-11-11 21:48:09 - [INFO] - Proceso de reserva d348d394 concluido. Estado final: Cancelada (Servicio no disponible)
+2026-11-11 21:48:09 - [ERROR] - Fallo reserva 2: Fallo al procesar reserva d348d394. | Causa original: El servicio 'Servidor Dell' está fuera de servicio.
+2026-11-11 21:48:09 - [INFO] - Iniciando procesamiento de reserva 9928d08d para Dairo
+2026-11-11 21:48:09 - [INFO] - Proceso de reserva 9928d08d concluido. Estado final: Cancelada (Datos de cálculo inválidos)
+2026-11-11 21:48:09 - [ERROR] - Fallo reserva 3: Parámetros numéricos inválidos en reserva 9928d08d. | Causa original: Los días de alquiler deben ser mayores a cero.
+2026-11-11 21:48:39 - [INFO] - Cliente creado exitosamente: 523b18de
+2026-11-11 21:48:39 - [ERROR] - Operación 2 denegada - Validación de Cliente: El documento debe contener únicamente números.
+2026-11-11 21:48:39 - [ERROR] - Operación 3 denegada - Validación de Cliente: El correo electrónico no tiene un formato válido.
+2026-11-11 21:48:39 - [INFO] - Servicio creado: Sala Ada Lovelace
+2026-11-11 21:48:39 - [INFO] - Servicio creado: Servidor Dell PowerEdge
+2026-11-11 21:48:39 - [INFO] - Servicio creado: Arquitectura en Python
+2026-11-11 21:48:39 - [ERROR] - Operación 5 denegada - Parámetro de servicio inválido: El nombre del servicio es obligatorio y el precio no puede ser negativo.
+2026-11-11 21:48:39 - [INFO] - Iniciando procesamiento de reserva e43bdda1 para Dairo
+2026-11-11 21:48:39 - [INFO] - Proceso de reserva e43bdda1 concluido. Estado final: Confirmada
+2026-11-11 21:48:39 - [INFO] - Iniciando procesamiento de reserva 0dcff0a0 para Dairo
+2026-11-11 21:48:39 - [INFO] - Proceso de reserva 0dcff0a0 concluido. Estado final: Cancelada (Servicio no disponible)
+2026-11-11 21:48:39 - [ERROR] - Fallo reserva 2: Fallo al procesar reserva 0dcff0a0. | Causa original: El servicio 'Servidor Dell' está fuera de servicio.
+2026-11-11 21:48:39 - [INFO] - Iniciando procesamiento de reserva c293ab13 para Dairo
+2026-11-11 21:48:39 - [INFO] - Proceso de reserva c293ab13 concluido. Estado final: Cancelada (Datos de cálculo inválidos)
+2026-11-11 21:48:39 - [ERROR] - Fallo reserva 3: Parámetros numéricos inválidos en reserva c293ab13. | Causa original: Los días de alquiler deben ser mayores a cero.
